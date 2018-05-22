@@ -1,0 +1,14 @@
+<!--pages/myorder/myorder.wxml  我的订单-->
+<view bindtap='orderDetail' wx:for="{{orderList}}" wx:key="orderList" data-index="{{index}}">
+
+    <view class='listBox' >
+        <image class='listItemImage' src='{{item.mainImg}}' binderror='errorFunction' data-errorimg="{{index}}"></image>
+        <view class='listItemBox'>
+            <view class='listItemText1'>鉴品名称：<text>{{item.goodsName}}</text></view>
+            <view  class='listItemText2'>状态：<text>{{item.statusStr}}</text></view>
+        </view>
+        <image class="orderItemImage" src="../../images/icon5.png"></image>
+    </view>
+    <view class='grayLine'></view>
+</view>
+<view wx:if="{{isData}}" class='textNodata'>没有更多数据了</view>
