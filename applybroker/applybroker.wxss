@@ -1,0 +1,44 @@
+/* pages/applybroker/applybroker.wxss */
+.applyBox{
+    padding: 64rpx 40rpx;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.applyView{
+    font-size: 36rpx;
+    margin-bottom: 84rpx;
+}
+.applyText1{
+    color: #ff0000;
+}
+.applyButton{
+    width: 670rpx;
+    background-color: #ab0203;
+    color: #fff;
+}
+
+.applyQrcodeBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.applyQrcodeView{
+    font-size: 28rpx;
+    margin: 50rpx auto;
+}
+
+.applyQrcodeView1{
+    font-size: 28rpx;
+    margin-top: 24rpx;
+}
+
+.container-box{background-color: #efeff4;height: 100vh}
+.img-box{padding: 32rpx;background-color: #fff;border-bottom: 1rpx solid #e5e5e5;position: relative}
+.img-box image{width: 320rpx;height: 320rpx;background-color: #f9f9f9}
+
+.mask{position: fixed;top: 0;left: 0;z-index: 3; width: 100%;height: 100%;opacity: 0;}
+.canvas-box{position: fixed;top:999999rpx;left: 0}

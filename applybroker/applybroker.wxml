@@ -1,0 +1,29 @@
+<!--pages/applybroker/applybroker.wxml-->
+<view class="applyBox">
+    <view class="applyView">您想成为经纪人的一份子，赚取佣金吗？只需要
+        <text class="applyText1">邀请并成功鉴宝</text>
+        ，即可获得额外提成！赶紧点击下方按钮生成经纪人二维码！
+    </view>
+    <button class="applyButton" >申请经纪人</button>
+
+
+    <view hidden="{{isBrokerHidden}}" class="applyQrcodeBox">
+    <view class="applyQrcodeView">我的经纪人二维码</view>
+    <view class="img-box">
+        <!-- <image bindtap="previewImg" mode="scaleToFill" src="{{imagePath}}"></image> -->
+        <image bindtap="previewImg" mode="scaleToFill" src="data:image/png;base64,{{imageData}}"></image>
+    </view>
+
+    <view class="applyQrcodeView1">审核通过后才能生成二维码</view>
+    <view class="applyQrcodeView1">请保存好您的二维码</view>
+    </view>
+
+    <view hidden="{{maskHidden}}" class="mask"></view>
+    <view class="canvas-box">
+        <canvas hidden="{{canvasHidden}}" style="width: 320rpx;height: 320rpx;background:#f1f1f1;"
+                canvas-id="mycanvas"/>
+    </view>
+
+
+</view>
+
